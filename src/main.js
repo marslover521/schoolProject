@@ -10,6 +10,18 @@ import 'vue-awesome-swiper'
 import Mint  from 'mint-ui';
 import VueVideoPlayer from 'vue-video-player'
 import { baseLiveAjaxUrl,baseImgUrl,appId,baseAjaxUrl,baseThirdServiceUrl,baseWsUrl } from "../static/js/config/base-config.js";
+//修改处开始
+import { Cell } from 'mint-ui';
+import { Navbar, TabItem } from 'mint-ui';
+import myOrder from './components/personal/myOrder.vue'
+
+Vue.use(myOrder);
+Vue.component(Navbar.name, Navbar);
+Vue.component(TabItem.name, TabItem);
+Vue.component(Cell.name, Cell);
+
+
+//修改处结束
 Vue.use(Mint);
 Vue.use(VueAwesomeSwiper);
 Vue.use(VueVideoPlayer);

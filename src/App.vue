@@ -1,20 +1,24 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
-  </div>
+	<div id="app">
+		<router-view></router-view>
+		<PersonalIndex></PersonalIndex>
+	</div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+	import PersonalIndex from './components/personal/index';
+	export default {
+		name: 'app',
+		components: {
+			PersonalIndex
+		}
+	}
 </script>
 
 <style>
-@import '/static/css/common.css';
-
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  height: 100%;
-}
+	@import '/static/css/common.css';
+	#app {
+		font-family: 'Avenir', Helvetica, Arial, sans-serif;
+		height: 100%;
+	}
 </style>
