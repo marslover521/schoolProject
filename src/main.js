@@ -13,12 +13,13 @@ import { baseLiveAjaxUrl,baseImgUrl,appId,baseAjaxUrl,baseThirdServiceUrl,baseWs
 //修改处开始
 import { Cell } from 'mint-ui';
 import { Navbar, TabItem } from 'mint-ui';
-import myOrder from './components/personal/myOrder.vue'
+import { Checklist } from 'mint-ui';
 
-Vue.use(myOrder);
+
+Vue.component(Cell.name, Cell);
 Vue.component(Navbar.name, Navbar);
 Vue.component(TabItem.name, TabItem);
-Vue.component(Cell.name, Cell);
+Vue.component(Checklist.name, Checklist);
 
 
 //修改处结束
