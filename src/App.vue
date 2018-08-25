@@ -1,18 +1,20 @@
 <template>
 	<div id="app">
 		<router-view></router-view>
-		<MyOrder></MyOrder>
+		<setting></setting>
 	</div>
 </template>
 
 <script>
 	import PersonalIndex from './components/personal/index';
-	import MyOrder from './components/personal/myOrder';
+	import test from './components/personal/test';
+	import setting from './components/personal/setting';
 	export default {
 		name: 'app',
 		components: {
 			PersonalIndex,
-			MyOrder
+			test,
+			setting
 		}
 	}
 </script>
