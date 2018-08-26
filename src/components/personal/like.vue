@@ -2,6 +2,10 @@
   <div class="like">
     <div class="like-top">
     	<div>
+    		<mt-checklist 
+				v-model="value" 
+				:options="options">
+				</mt-checklist>
     		<span>全选</span>
     	</div>
     	<div><span>编辑</span><span v-show="false">完成</span></div>
@@ -57,8 +61,28 @@
 export default { 
   data() {
     return {
-		defaultImg:require('../../assets/img/goodsPhoto.png'),
-		
+			defaultImg:require('../../assets/img/goodsPhoto.png'),
+			value:[],
+			//checklist设置
+			options : [{
+		    label: '选项A',
+		    value: 'A',
+		    disabled: true	//可以禁用选项
+			},
+			{
+		    label: '选项B',
+		    value: 'B',
+		    disabled: true
+			},
+			{
+		    label: '选项C',
+		    value: 'C'
+			},
+			{
+		    label: '选项D',
+		    value: 'D'
+			}]
+
 
     };
   }
